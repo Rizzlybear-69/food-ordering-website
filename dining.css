@@ -1,0 +1,152 @@
+
+
+
+.container {
+    display: flex; /* Use flexbox for layout */
+    flex-wrap: wrap; /* Allow wrapping to next line if needed */
+    gap: 16px; /* Space between items */
+    justify-content: center; /* Center align the items horizontally */
+    padding: 16px; /* Padding around the container */
+}
+
+/* Adjustments for individual boxes */
+.box {
+    flex: 1 1 calc(25% - 32px); /* Adjust box width to fit four items per row, minus gap */
+    box-sizing: border-box; /* Include padding and border in width calculation */
+}
+
+/* Ensure boxes are responsive */
+@media (max-width: 768px) {
+    .box {
+        flex: 1 1 calc(50% - 32px); /* Two items per row on medium screens */
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        flex: 1 1 100%; /* One item per row on small screens */
+    }
+}
+
+.shopping-cart .price {
+font-size: 12px; /* Larger font size for price */
+font-weight: bold; /* Bold text for emphasis */
+color:orange; /* Orange color for the price */
+display: block; /* Block display to stack below other content */
+margin-bottom: 8px; /* Space below price */
+}
+
+h3{
+    color: rgb(105, 105, 105);
+display: inline;
+text-decoration: none;
+
+}
+
+
+h5 {
+display: block;
+font-size: 0.83em;
+margin-block-start: 1.67em;
+margin-block-end: 1.67em;
+margin-inline-start: 0px;
+margin-inline-end: 0px;
+font-weight: bold;
+color: #9c9c9c;
+unicode-bidi: isolate;
+}
+
+.middle,  .end{
+    margin: 60px 150px;
+}
+.sec-2 h2{
+    font-size: 2.7rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+}
+.sec-2 div{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.sec-2 h6{
+    margin: 0;
+    font-size: 1rem;
+    font-weight: lighter;
+    color: rgb(99, 98, 98);
+}
+.fa-caret-right, .sec-2 span{
+    color: rgb(248, 117, 117);
+}
+.box-1{
+    width: 255px;
+    height: 300px;
+    overflow: hidden;
+    position: relative;
+    border-radius: 8px;
+}
+.box-1 div{
+    position: absolute;
+    background: linear-gradient(transparent, black);
+    width: 100%;
+    height: 25%;
+    display: flex;
+    align-items: flex-end;
+    bottom: 0;
+}
+.box-1 div span:first-child{
+    display: inline-block;
+    color: white;
+    padding-left: 15px;
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+.box-1 i{
+    color: white;
+    padding-bottom: 15px;
+}
+.box-1 img{
+    width: 255px;
+    height: 300px;
+    object-fit: cover;
+}
+.sec-3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-bottom: 130px;
+}
+.middle h1{
+    font-size: 2.1rem;
+    font-weight: lighter;
+    text-align: center;
+    margin: 50px;
+    color: rgb(56, 56, 56);
+}
+.box:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.shopping-cart:hover .price {
+    color: #ff6f00; /* Change price color on hover */
+}
+
+figure:hover img {
+    opacity: 0.8; /* Slightly fade the image on hover */
+    transition: opacity 0.3s ease; /* Smooth transition */
+}
+.box-1:hover {
+    transform: scale(1.05); /* Slightly enlarge the box */
+    transition: transform 0.3s ease-in-out; /* Smooth transition */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow for depth */
+}
+
+.heading h1{
+    font-size: 2.7rem;
+    font-weight: lighter;
+    margin-bottom: 10px;
+  
+}
